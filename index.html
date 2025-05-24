@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Boda de Alicia y Brandon</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display&display=swap"
+        rel="stylesheet" />
+
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Playfair Display', serif;
+            color: #333;
+        }
+
+        .background-image {
+            background: url('img/foto.jpg') no-repeat center center fixed;
+            background-size: contain;
+            height: 100vh;
+            position: relative;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.6);
+            /* schiarisce l'immagine */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .initials {
+            font-family: 'Great Vibes', cursive;
+            font-size: 4rem;
+            color: #2c2c2c;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        .names {
+            font-size: 2rem;
+            font-weight: 300;
+        }
+
+        .content {
+            background: #fff;
+            padding: 2rem;
+            margin-top: 2rem;
+            border-radius: 12px;
+            max-width: 700px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .icon {
+            font-size: 2rem;
+            color: #c19e5f;
+        }
+
+        @media (max-width: 768px) {
+            .initials {
+                font-size: 3rem;
+            }
+
+            .names {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="background-image">
+        <div class="overlay">
+            <div>
+                <h1 class="initials">F & R</h1>
+                <h2 class="names">Francesco & Roberta</h2>
+            </div>
+        </div>
+    </div>
+
+    <main class="container text-center content">
+        <p class="fst-italic">Con la bendición de Dios y de nuestros padres</p>
+
+        <div class="row justify-content-center mb-4">
+            <div class="col-md-5">Alicia Chávez Ruiz<br>Nazario Escobedo Berrones</div>
+            <div class="col-md-5">Blanca Esthela Hernández Alvarado<br>Eusebio Rodríguez Martínez</div>
+        </div>
+
+        <h2 class="mb-3">¡Nos Casamos!</h2>
+        <p>Los esperamos para celebrar juntos el día</p>
+        <div class="display-5 fw-bold">Sábado 18 Mayo 2024</div>
+
+        <div class="mt-5">
+            <div class="icon">⛪</div>
+            <p>Parr. del Sagrado Corazón de Jesús</p>
+        </div>
+    </main>
+
+</body>
+
+</html>
