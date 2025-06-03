@@ -8,109 +8,136 @@
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display&display=swap"
         rel="stylesheet" />
+</head>
 
-    <style>
-        html,
-        body {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            font-family: 'Playfair Display', serif;
-            color: #333;
-        }
+<body style="margin: 0; padding: 0; height: 100%; font-family: 'Playfair Display', serif; color: #333;">
 
-        .background-image {
-            background: url('img/foto.jpg') no-repeat center center fixed;
-            background-size: contain;
-            height: 100vh;
-            position: relative;
-        }
-
-        .overlay {
+    <div class="background-image" style="
+        background: url('img/foto.jpg') no-repeat center center fixed;
+        background-size: cover;
+        height: 100vh;
+        position: relative;">
+        <div class="overlay" style="
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
             background-color: rgba(255, 255, 255, 0.6);
-            /* schiarisce l'immagine */
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
             text-align: center;
-            padding: 1rem;
-        }
-
-        .initials {
-            font-family: 'Great Vibes', cursive;
-            font-size: 4rem;
-            color: #2c2c2c;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-        }
-
-        .names {
-            font-size: 2rem;
-            font-weight: 300;
-        }
-
-        .content {
-            background: #fff;
-            padding: 2rem;
-            margin-top: 2rem;
-            border-radius: 12px;
-            max-width: 700px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .icon {
-            font-size: 2rem;
-            color: #c19e5f;
-        }
-
-        @media (max-width: 768px) {
-            .initials {
-                font-size: 3rem;
-            }
-
-            .names {
-                font-size: 1.5rem;
-            }
-        }
-    </style>
-</head>
-
-<body>
-
-    <div class="background-image">
-        <div class="overlay">
+            padding: 1rem;">
             <div>
-                <h1 class="initials">F & R</h1>
-                <h2 class="names">Francesco e Roberta</h2>
+                <h1 class="initials" style="
+                    font-family: 'Great Vibes', cursive;
+                    font-size: 4rem;
+                    color: #2c2c2c;
+                    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);">
+                    F & R
+                </h1>
+                <h2 class="names" style="font-size: 2rem; font-weight: 300;">Francesco e Roberta</h2>
             </div>
         </div>
     </div>
 
-    <main class="container text-center content">
-        <p class="fst-italic">Con la bendición de Dios y de nuestros padres</p>
+    <main class="container text-center"
+        style="background: #fff; padding: 2rem; margin-top: 0; border-radius: 12px; max-width: 700px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); font-family: 'Playfair Display', serif;">
 
-        <div class="row justify-content-center mb-4">
-            <div class="col-md-5">Alicia Chávez Ruiz<br>Nazario Escobedo Berrones</div>
-            <div class="col-md-5">Blanca Esthela Hernández Alvarado<br>Eusebio Rodríguez Martínez</div>
+        <!-- Titolo -->
+        <h2 style="font-family: 'Great Vibes', cursive; font-size: 2.5rem; color: #914d2f;">Francesco & Roberta</h2>
+        <p style="font-style: italic;">Siamo felici di condividere con voi il nostro giorno speciale</p>
+
+        <!-- Data decorativa centrale -->
+        <!-- Data con righe e numero centrale fuori -->
+        <div style="margin-top: 2rem; text-align: center;">
+
+            <!-- Mese sopra -->
+            <div style="font-size: 1.2rem; color: #b57e30; font-weight: 500;">SETTEMBRE</div>
+
+            <!-- Riga sopra -->
+            <div style="width: 100%; height: 2px; background-color: #b57e30; margin: 10px 0;"></div>
+
+            <!-- Riga con SABATO e ORE 11:00 -->
+            <div style="display: flex; justify-content: center; align-items: center; gap: 6rem; position: relative;">
+                <div style="font-size: 1rem; color: #b57e30; font-weight: bold;">SABATO</div>
+                <div style="font-size: 1rem; color: #b57e30; font-weight: bold;">ORE 11:00</div>
+
+                <!-- Numero al centro sovrapposto -->
+                <div
+                    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 3.5rem; color: #c19e5f; font-weight: bold; background-color: white; padding: 0 10px;">
+                    13
+                </div>
+            </div>
+
+            <!-- Riga sotto -->
+            <div style="width: 100%; height: 2px; background-color: #b57e30; margin: 10px 0;"></div>
+
+            <!-- Anno sotto -->
+            <div style="font-size: 1.2rem; color: #914d2f; font-weight: 500;">2025</div>
         </div>
 
-        <h2 class="mb-3">¡Nos Casamos!</h2>
-        <p>Los esperamos para celebrar juntos el día</p>
-        <div class="display-5 fw-bold">Sábado 18 Mayo 2024</div>
 
-        <div class="mt-5">
-            <div class="icon">⛪</div>
-            <p>Parr. del Sagrado Corazón de Jesús</p>
+
+
+
+
+        <!-- Dove -->
+        <h3 class="mt-5" style="margin-top: 3rem; font-weight: 600;">Luoghi della giornata</h3>
+
+        <!-- Chiesa -->
+        <div class="mt-4">
+            <a href="https://www.google.com/maps/place/Chiesa+San+Domenico,+Corso+Marrucino,+Chieti" target="_blank"
+                style="text-decoration: none; color: inherit;">
+                <i class="bi bi-building" style="font-size: 2rem; color: #c19e5f;"></i>
+                <p class="mt-2 mb-0"><strong>Chiesa S. Domenico</strong></p>
+                <p style="font-size: 0.9rem;">Corso Marrucino – Chieti</p>
+            </a>
+        </div>
+
+        <!-- Parcheggio -->
+        <div class="mt-3">
+            <a href="https://www.google.com/maps/place/Piazza+Garibaldi,+Chieti" target="_blank"
+                style="text-decoration: none; color: inherit;">
+                <i class="bi bi-p-circle" style="font-size: 2rem; color: #c19e5f;"></i>
+                <p class="mt-2 mb-0"><strong>Parcheggio consigliato</strong></p>
+                <p style="font-size: 0.9rem;">Piazza Garibaldi – Chieti</p>
+            </a>
+        </div>
+
+        <!-- Ristorante -->
+        <div class="mt-3">
+            <a href="https://www.google.com/maps/place/Casale+Marino,+Collecorvino" target="_blank"
+                style="text-decoration: none; color: inherit;">
+                <i class="bi bi-geo-alt" style="font-size: 2rem; color: #c19e5f;"></i>
+                <p class="mt-2 mb-0"><strong>Casale Marino</strong></p>
+                <p style="font-size: 0.9rem;">Strada delle Vigne, 69 – Collecorvino (PE)</p>
+            </a>
+        </div>
+
+        <!-- IBAN -->
+        <h3 class="mt-5" style="margin-top: 3rem;">Un pensiero speciale</h3>
+        <p>Se desiderate farci un regalo, potete contribuire al nostro viaggio:</p>
+        <div
+            style="border: 1px dashed #c19e5f; padding: 1rem; border-radius: 10px; background-color: #fdfaf5; color: #333;">
+            <strong>IBAN:</strong> IT00A0000000000000000000000<br>
+            <small>Intestato a: Francesco Rossi e Roberta Bianchi</small>
+        </div>
+
+        <!-- Contatti RSVP -->
+        <div class="mt-4" style="font-size: 0.9rem; color: #666;">
+            È gradita gentile conferma<br>
+            Francesco: 392 4958 372 – Roberta: 320 1846 007
         </div>
     </main>
+
 
 </body>
 
