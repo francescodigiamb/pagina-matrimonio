@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="it">
 
 <head>
     <meta charset="UTF-8" />
@@ -13,26 +13,34 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display&display=swap"
         rel="stylesheet" />
-</head>
 
-<body style="margin: 0; padding: 0; height: 100%; font-family: 'Playfair Display', serif; color: #333;">
+    <!-- CSS incorporato -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    <div class="background-image" style="
-    background: url('img/foto.jpg') no-repeat center center;
-    background-size: contain;
-    background-attachment: scroll;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #ffffff;
-    min-height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-">
+        html,
+        body {
+            height: 100%;
+            font-family: 'Playfair Display', serif;
+            color: #333;
+        }
 
-        <div class="overlay" style="
+        .background-image {
+            background: url('img/foto.jpg') no-repeat center center;
+            background-size: cover;
+            min-height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .overlay {
             position: absolute;
             top: 0;
             left: 0;
@@ -44,68 +52,118 @@
             align-items: center;
             flex-direction: column;
             text-align: center;
-            padding: 1rem;">
+            padding: 1rem;
+        }
+
+        main {
+            background: #fff;
+            padding: 2rem;
+            margin-top: 0;
+            border-radius: 12px;
+            max-width: 700px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* Data decorativa */
+        .data-container {
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        .data-container .righe {
+            width: 100%;
+            height: 2px;
+            background-color: #b57e30;
+            margin: 10px 0;
+        }
+
+        .data-container .numero {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 3.5rem;
+            color: #c19e5f;
+            font-weight: bold;
+            background-color: white;
+            padding: 0 10px;
+            z-index: 1;
+        }
+
+        .riga-centrale {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 6rem;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Immagine con overlay -->
+    <div class="background-image">
+        <div class="overlay">
             <div>
-                <h1 class="initials" style="
-                    font-family: 'Great Vibes', cursive;
-                    font-size: 4rem;
-                    color: #2c2c2c;
-                    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);">
+                <h1
+                    style="font-family: 'Great Vibes', cursive; font-size: 4rem; color: #2c2c2c; text-shadow: 1px 1px 2px rgba(0,0,0,0.3);">
                     F & R
                 </h1>
-                <h2 class="names" style="font-size: 2rem; font-weight: 300;">Francesco e Roberta</h2>
+                <h2 style="font-size: 2rem; font-weight: 300;">Francesco e Roberta</h2>
             </div>
         </div>
     </div>
 
-    <main class="container text-center"
-        style="background: #fff; padding: 2rem; margin-top: 0; border-radius: 12px; max-width: 700px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); font-family: 'Playfair Display', serif;">
+    <!-- Main content -->
+    <main class="container text-center">
 
-        <!-- Titolo -->
         <h2 style="font-family: 'Great Vibes', cursive; font-size: 2.5rem; color: #914d2f;">Francesco & Roberta</h2>
         <p style="font-style: italic;">Siamo felici di condividere con voi il nostro giorno speciale</p>
-
-        <!-- Data decorativa centrale -->
-        <!-- Data con righe e numero centrale fuori -->
+        <!-- Data decorativa con layout richiesto -->
         <div style="margin-top: 2rem; text-align: center;">
 
-            <!-- Mese sopra -->
+            <!-- Mese -->
             <div style="font-size: 1.2rem; color: #b57e30; font-weight: 500;">SETTEMBRE</div>
 
-            <!-- Riga sopra -->
-            <div style="width: 100%; height: 2px; background-color: #b57e30; margin: 10px 0;"></div>
+            <!-- Riga completa con sabato, 13, ora -->
+            <div
+                style="display: flex; justify-content: center; align-items: center; gap: 2rem; margin-top: 1rem; margin-bottom: 1rem;">
 
-            <!-- Riga con SABATO e ORE 11:00 -->
-            <div style="display: flex; justify-content: center; align-items: center; gap: 6rem; position: relative;">
-                <div style="font-size: 1rem; color: #b57e30; font-weight: bold;">SABATO</div>
-                <div style="font-size: 1rem; color: #b57e30; font-weight: bold;">ORE 11:00</div>
+                <!-- Giorno (SABATO) tra due righe -->
+                <div style="display: flex; flex-direction: column; align-items: center;">
+                    <div style="height: 2px; width: 100%; background-color: #b57e30; margin-bottom: 4px;"></div>
+                    <div style="font-size: 1rem; color: #b57e30; font-weight: bold;">SABATO</div>
+                    <div style="height: 2px; width: 100%; background-color: #b57e30; margin-top: 4px;"></div>
+                </div>
 
-                <!-- Numero al centro sovrapposto -->
+                <!-- Numero 13, centrato visivamente -->
                 <div
-                    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 3.5rem; color: #c19e5f; font-weight: bold; background-color: white; padding: 0 10px;">
+                    style="font-size: 3.5rem; color: #c19e5f; font-weight: bold; line-height: 1; position: relative; top: -6px;">
                     13
                 </div>
+
+                <!-- Ora (ORE 11:00) tra due righe -->
+                <div style="display: flex; flex-direction: column; align-items: center;">
+                    <div style="height: 2px; width: 100%; background-color: #b57e30; margin-bottom: 4px;"></div>
+                    <div style="font-size: 1rem; color: #b57e30; font-weight: bold;">ORE 11:00</div>
+                    <div style="height: 2px; width: 100%; background-color: #b57e30; margin-top: 4px;"></div>
+                </div>
+
             </div>
 
-            <!-- Riga sotto -->
-            <div style="width: 100%; height: 2px; background-color: #b57e30; margin: 10px 0;"></div>
-
-            <!-- Anno sotto -->
+            <!-- Anno -->
             <div style="font-size: 1.2rem; color: #914d2f; font-weight: 500;">2025</div>
         </div>
 
-
-
-
-
-
-        <!-- Dove -->
-        <h3 class="mt-5" style="margin-top: 3rem; font-weight: 600;">Luoghi della giornata</h3>
+        <!-- Luoghi -->
+        <h3 class="mt-5" style="font-weight: 600;">Luoghi della giornata</h3>
 
         <!-- Chiesa -->
         <div class="mt-4">
-            <a href="https://www.google.com/maps/place/Chiesa+di+San+Domenico+al+Corso/@42.3483753,14.1657958,19.33z/data=!4m14!1m7!3m6!1s0x1331ac3f9f9c2619:0x65baad56cc9f61e1!2sCattedrale+di+San+Giustino!8m2!3d42.3514539!4d14.1669751!16s%2Fg%2F12116td8!3m5!1s0x1331ac40e2e0393b:0x5c4a9af0cae09105!8m2!3d42.3484867!4d14.1660889!16s%2Fg%2F11clzvb4y7?entry=ttu&g_ep=EgoyMDI1MDYwNC4wIKXMDSoASAFQAw%3D%3D"
-                target="_blank" style="text-decoration: none; color: inherit;">
+            <a href="https://www.google.com/maps/place/Chiesa+di+San+Domenico+al+Corso/..." target="_blank"
+                style="text-decoration: none; color: inherit;">
                 <i class="bi bi-building" style="font-size: 2rem; color: #c19e5f;"></i>
                 <p class="mt-2 mb-0"><strong>Chiesa S. Domenico</strong></p>
                 <p style="font-size: 0.9rem;">Corso Marrucino – Chieti</p>
@@ -114,18 +172,18 @@
 
         <!-- Parcheggio -->
         <div class="mt-3">
-            <a href="https://www.google.com/maps/place/Seminario+Regionale+Pontificio+S.+Pio+X/@42.346399,14.1647975,19.83z/data=!4m14!1m7!3m6!1s0x1331ac3f9f9c2619:0x65baad56cc9f61e1!2sCattedrale+di+San+Giustino!8m2!3d42.3514539!4d14.1669751!16s%2Fg%2F12116td8!3m5!1s0x1331ac415a3a0d17:0x77d46ae48ea48077!8m2!3d42.3463403!4d14.1648238!16s%2Fg%2F1tfx_4pl?entry=ttu&g_ep=EgoyMDI1MDYwNC4wIKXMDSoASAFQAw%3D%3D"
-                target="_blank" style="text-decoration: none; color: inherit;">
+            <a href="https://www.google.com/maps/place/Seminario+Regionale+Pontificio+S.+Pio+X/..." target="_blank"
+                style="text-decoration: none; color: inherit;">
                 <i class="bi bi-p-circle" style="font-size: 2rem; color: #c19e5f;"></i>
                 <p class="mt-2 mb-0"><strong>Parcheggio consigliato</strong></p>
-                <p style="font-size: 0.9rem;">Seminario regionale pontificio San Pio X – Chieti</p>
+                <p style="font-size: 0.9rem;">Seminario pontificio San Pio X – Chieti</p>
             </a>
         </div>
 
         <!-- Ristorante -->
         <div class="mt-3">
-            <a href="https://www.google.com/maps/place/Casale+Marino+1625/@42.4660991,14.0669365,17z/data=!3m1!4b1!4m6!3m5!1s0x1331ba9bb51bb5d1:0x1e3046b3e760ba12!8m2!3d42.4660952!4d14.0695114!16s%2Fg%2F12q4wh4kt?entry=ttu&g_ep=EgoyMDI1MDYwNC4wIKXMDSoASAFQAw%3D%3D"
-                target="_blank" style="text-decoration: none; color: inherit;">
+            <a href="https://www.google.com/maps/place/Casale+Marino+1625/..." target="_blank"
+                style="text-decoration: none; color: inherit;">
                 <i class="bi bi-geo-alt" style="font-size: 2rem; color: #c19e5f;"></i>
                 <p class="mt-2 mb-0"><strong>Casale Marino</strong></p>
                 <p style="font-size: 0.9rem;">Strada delle Vigne, 69 – Collecorvino (PE)</p>
@@ -133,21 +191,21 @@
         </div>
 
         <!-- IBAN -->
-        <h3 class="mt-5" style="margin-top: 3rem;">Un pensiero speciale</h3>
+        <h3 class="mt-5">Un pensiero speciale</h3>
         <p>Se desiderate farci un regalo, potete contribuire al nostro viaggio:</p>
         <div
             style="border: 1px dashed #c19e5f; padding: 1rem; border-radius: 10px; background-color: #fdfaf5; color: #333;">
             <strong>IBAN:</strong> IT65G0538777340000004410924 <br>
-            <small>Intestato a: Francesco Di Giambattista e Roberta Lapenna</small>
+            <div><small>Intestato a:</small></div>
+            <small>Francesco Di Giambattista e/o Roberta Lapenna</small>
         </div>
 
-        <!-- Contatti RSVP -->
+        <!-- RSVP -->
         <div class="mt-4" style="font-size: 0.9rem; color: #666;">
             È gradita gentile conferma<br>
             Francesco: 392 4958 372 – Roberta: 320 1846 007
         </div>
     </main>
-
 
 </body>
 
