@@ -13,6 +13,9 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display&display=swap"
         rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&display=swap"
+        rel="stylesheet">
+
 
     <!-- CSS incorporato -->
     <style>
@@ -27,6 +30,32 @@
             height: 100%;
             font-family: 'Playfair Display', serif;
             color: #333;
+        }
+
+        h1,
+        h2.initials,
+        .names,
+        h3 {
+            font-family: 'Great Vibes', cursive;
+        }
+
+        p {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 300;
+            font-size: 1.05rem;
+        }
+
+        .iban-box {
+            font-family: 'Lora', serif;
+            font-weight: 400;
+            font-size: 0.95rem;
+            color: #333;
+        }
+
+        .small-note {
+            font-size: 0.85rem;
+            font-family: 'Lora', serif;
+            color: #666;
         }
 
         .background-image {
@@ -107,10 +136,9 @@
     <div class="background-image">
         <div class="overlay">
             <div>
-                <h1
-                    style="font-family: 'Great Vibes', cursive; font-size: 4rem; color: #2c2c2c; text-shadow: 1px 1px 2px rgba(0,0,0,0.3);">
-                    F & R
-                </h1>
+                <img src="img/logoFR-removebg-preview.png" alt="Logo F & R"
+                    style="max-width: 280px; height: auto; margin-bottom: 1rem;" />
+
             </div>
         </div>
     </div>
@@ -118,7 +146,7 @@
     <!-- Main content -->
     <main class="container text-center">
 
-        <h2 style="font-family: 'Great Vibes', cursive; font-size: 2.5rem; color: #914d2f;">Francesco & Roberta</h2>
+        <h2 style="font-family: 'Great Vibes', cursive; font-size: 2.5rem; color: #b57e30;">Francesco & Roberta</h2>
         <p style="font-style: italic;">Siamo felici di condividere con voi il nostro giorno speciale</p>
         <!-- Data decorativa con layout richiesto -->
         <div style="margin-top: 2rem; text-align: center;">
@@ -191,18 +219,18 @@
 
         <!-- IBAN -->
         <h3 class="mt-5">Un pensiero speciale</h3>
-        <p>Se desiderate farci un regalo, potete contribuire al nostro viaggio:</p>
-        <div
+        <p class="iban-box">Se desiderate farci un regalo, potete contribuire al nostro viaggio:</p>
+        <div class="iban-box"
             style="border: 1px dashed #c19e5f; padding: 1rem; border-radius: 10px; background-color: #fdfaf5; color: #333;">
             <strong>IBAN:</strong> IT65G0538777340000004410924 <br>
             <div><small>Intestato a:</small></div>
-            <small>Francesco Di Giambattista e/o Roberta Lapenna</small>
+            <small class="small-note">Francesco Di Giambattista e/o Roberta Lapenna</small>
         </div>
 
         <!-- RSVP -->
         <div class="mt-4" style="font-size: 0.9rem; color: #666;">
             È gradita gentile conferma<br>
-            Francesco: 392 4958 372 – Roberta: 320 1846 007
+            Francesco: 392 4958 372 – Roberta: 320 1846 907
         </div>
     </main>
 
