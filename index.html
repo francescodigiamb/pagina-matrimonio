@@ -29,7 +29,7 @@
         body {
             height: 100%;
             font-family: 'Playfair Display', serif;
-            color: #2f3c2c !important;
+            color: #216556 !important;
         }
 
         h1,
@@ -127,6 +127,35 @@
             gap: 6rem;
             position: relative;
         }
+
+        .wedding-info {
+            position: relative;
+            background-image: url('img/composizione-sito-matrimonio.png');
+            /* Cambia col nome giusto */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            z-index: 1;
+            overflow: hidden;
+        }
+
+        .wedding-info::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(255, 255, 255, 0.85);
+            /* Sbiadisce l'immagine */
+            z-index: 2;
+        }
+
+        /* Per far sì che il testo sia sopra lo sfondo sbiadito */
+        .wedding-info>* {
+            position: relative;
+            z-index: 3;
+        }
     </style>
 </head>
 
@@ -144,7 +173,7 @@
     </div>
 
     <!-- Main content -->
-    <main class="container text-center">
+    <main class="container text-center wedding-info">
 
         <h2 style="font-family: 'Great Vibes', cursive; font-size: 2.5rem; color: #b57e30;">Francesco & Roberta</h2>
         <p style="font-style: italic;">Siamo felici di condividere con voi il nostro giorno speciale</p>
@@ -218,7 +247,7 @@
         </div>
 
         <!-- IBAN -->
-        <h3 class="mt-5">Un pensiero speciale</h3>
+        <h3 class="mt-5" style="font-weight: 600;">Un pensiero speciale</h3>
         <p class="iban-box">Se desiderate farci un regalo, potete contribuire al nostro viaggio:</p>
         <div class="iban-box"
             style="border: 1px dashed #2f3c2c; padding: 1rem; border-radius: 10px; background-color: #fdfaf5; color: #333;">
